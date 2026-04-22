@@ -53,6 +53,84 @@ export function LandingScrollAnimations() {
           },
         );
       });
+
+      const showcaseSection = document.querySelector<HTMLElement>("#showcase");
+
+      if (showcaseSection) {
+        gsap.fromTo(
+          "#showcase h2",
+          {
+            y: 250,
+            skewY: 7,
+          },
+          {
+            y: 0,
+            skewY: 0,
+            duration: 1.3,
+            ease: "power2.inOut",
+            scrollTrigger: {
+              trigger: "#showcase",
+              start: "100px bottom",
+              once: false,
+            },
+          },
+        );
+
+        gsap.fromTo(
+          "#showcase-desc",
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            duration: 0.7,
+            ease: "power2.inOut",
+            scrollTrigger: {
+              trigger: "#showcase",
+              start: "100px bottom",
+              once: false,
+            },
+          },
+        );
+
+        gsap.fromTo(
+          "#showcase-img",
+          {
+            y: 170,
+          },
+          {
+            y: -100,
+            ease: "none",
+            scrollTrigger: {
+              trigger: "#showcase",
+              start: "180px bottom",
+              end: "70% top",
+              scrub: 0.7,
+            },
+          },
+        );
+
+        gsap.fromTo(
+          ".showcase-desc-stagger",
+          {
+            opacity: 0,
+            y: 10,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.3,
+            duration: 1,
+            ease: "power3.inOut",
+            scrollTrigger: {
+              trigger: "#showcase",
+              start: "60% bottom",
+              end: "70% top",
+              scrub: true,
+            },
+          },
+        );
+      }
     });
 
     return () => ctx.revert();
