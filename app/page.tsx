@@ -5,6 +5,7 @@ import { CategoriesSection } from "@/components/landing/categories-section";
 import { HowItWorksSection } from "@/components/landing/how-it-works-section";
 import { DiscoverTextSection } from "@/components/landing/discover-text-section";
 import { FeaturedBooksSection } from "@/components/landing/featured-books-section";
+import { ShowcaseImageSection } from "@/components/landing/showcase-image-section";
 import { FinalCtaSection } from "@/components/landing/final-cta-section";
 import { LandingFooter } from "@/components/landing/landing-footer";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroSection />
       <CategoriesSection />
       <HowItWorksSection />
+      <ShowcaseImageSection />
       <DiscoverTextSection />
       <FeaturedBooksSection />
       <FinalCtaSection />
