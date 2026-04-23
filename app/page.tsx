@@ -2,7 +2,6 @@ import { LandingNavbar } from "@/components/landing/landing-navbar";
 import { LandingScrollAnimations } from "@/components/landing/landing-scroll-animations";
 import { HeroSection } from "@/components/landing/hero-section";
 import { CategoriesSection } from "@/components/landing/categories-section";
-import { HowItWorksSection } from "@/components/landing/how-it-works-section";
 import { DiscoverTextSection } from "@/components/landing/discover-text-section";
 import { FeaturedBooksSection } from "@/components/landing/featured-books-section";
 import { ShowcaseImageSection } from "@/components/landing/showcase-image-section";
@@ -16,7 +15,6 @@ export default function Home() {
       <LandingScrollAnimations />
       <HeroSection />
       <CategoriesSection />
-      <HowItWorksSection />
       <ShowcaseImageSection />
       <DiscoverTextSection />
       <FeaturedBooksSection />
