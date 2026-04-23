@@ -34,15 +34,6 @@ export function FeaturedBooksSection() {
   return (
     <section id="featured" data-section className="border-y-2 border-slate-900/20">
       <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div data-stagger className="mb-8 flex items-end justify-between gap-4">
-          <div>
-            <p className="text-xs font-semibold tracking-[0.22em] text-slate-500 uppercase">Featured books</p>
-          </div>
-          <Button asChild variant="outline" className="rounded-full border-slate-300 bg-white">
-            <Link href="/store">View Collection</Link>
-          </Button>
-        </div>
-
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[280px_1fr] lg:gap-8">
           <aside data-stagger className="lg:pr-4">
             <h3 className="max-w-[14ch] font-heading text-4xl leading-[1.05] tracking-tight text-slate-950 sm:text-5xl">
@@ -55,6 +46,11 @@ export function FeaturedBooksSection() {
                 </li>
               ))}
             </ul>
+            <div data-stagger className="mt-8 flex justify-start">
+              <Button asChild variant="outline" className="rounded-full border-slate-500 bg-white">
+                <Link href="/store">View Collection</Link>
+              </Button>
+            </div>
           </aside>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
