@@ -37,18 +37,20 @@ export function LandingFooter() {
   return (
     <footer id="contact" data-section className="mt-16 border-t-2 border-slate-700 bg-[#0a1018] text-slate-200">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="mb-10 flex items-center justify-between gap-4 border-b border-slate-700/80 pb-6">
-          <p data-stagger className="font-heading text-2xl tracking-tight text-slate-50">
+        <div className="mb-5 flex items-center justify-between gap-4">
+          <p className="font-heading text-2xl tracking-tight text-slate-50">
             Readora.
           </p>
-          <p data-stagger className="text-sm text-slate-400">
+          <p className="text-sm text-slate-400">
             Modern reading for curious minds.
           </p>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-          <div data-stagger className="space-y-5">
-            <p className="text-xs font-semibold tracking-[0.22em] text-emerald-400 uppercase">Navigate</p>
+        <div className="mb-8 h-[3px] w-full bg-white sm:w-2/3 lg:w-2/3" />
+
+        <div className="grid gap-25 md:grid-cols-2 lg:grid-cols-4">
+          <div className="space-y-5">
+            <p className="text-xs font-semibold tracking-[0.22em] text-emerald-400 uppercase">Quick Links</p>
             <ul className="space-y-3">
               {landingFooterQuickLinks.map((link) => (
                 <li key={link.label}>
@@ -60,21 +62,8 @@ export function LandingFooter() {
             </ul>
           </div>
 
-          <div data-stagger className="space-y-5">
-            <p className="text-xs font-semibold tracking-[0.22em] text-slate-400 uppercase">Resources</p>
-            <ul className="space-y-3">
-              {landingFooterResources.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-[15px] text-slate-300 transition-colors hover:text-slate-100">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div data-stagger className="space-y-5">
-            <p className="text-xs font-semibold tracking-[0.22em] text-slate-400 uppercase">Contact</p>
+          <div className="space-y-5">
+            <p className="text-xs font-semibold tracking-[0.22em] text-emerald-400 uppercase">Contact</p>
             <ul className="space-y-3 text-[15px] text-slate-300">
               {landingFooterContact.phones.map((phone) => (
                 <li key={phone}>{phone}</li>
@@ -85,8 +74,8 @@ export function LandingFooter() {
             </ul>
           </div>
 
-          <div data-stagger className="space-y-5">
-            <p className="text-xs font-semibold tracking-[0.22em] text-slate-400 uppercase">Follow</p>
+          <div className="space-y-5">
+            <p className="text-xs font-semibold tracking-[0.22em] text-emerald-400 uppercase">Follow Us</p>
             <div className="flex items-center gap-3">
               {landingFooterSocials.map((social) => {
                 const Icon = socialIconMap[social.label as keyof typeof socialIconMap];
@@ -107,12 +96,11 @@ export function LandingFooter() {
                 );
               })}
             </div>
-            <p className="text-sm text-slate-400">Quick support from 10am to 6pm, everyday.</p>
           </div>
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-slate-700/80 pt-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-          <p>Copyright 2026 Readora. All rights reserved.</p>
+          <p>2026</p>
           <div className="flex items-center gap-5">
             <Link href="#" className="transition-colors hover:text-slate-100">
               Privacy
