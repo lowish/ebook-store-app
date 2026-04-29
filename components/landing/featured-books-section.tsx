@@ -28,11 +28,11 @@ const coverByImageId: Record<(typeof books)[number]["image"], string> = {
   book3: "/covers/LawsofPower.jpg",
 };
 
-const categories = ["Fiction", "Business", "Self-help", "Education"] as const;
+const categories = ["Self Improvement", "Philosophy", "Personal Growth", "Life Strategy"] as const;
 
 export function FeaturedBooksSection() {
   return (
-    <section id="featured" data-section className="border-y-2 border-slate-900/20">
+    <section id="featured" data-section className="border-y-8 border-slate-900/20">
       <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[280px_1fr] lg:gap-8">
           <aside data-stagger className="lg:pr-4">
@@ -45,12 +45,12 @@ export function FeaturedBooksSection() {
                   {category}
                 </li>
               ))}
-            </ul>
-            <div data-stagger className="mt-8 flex justify-start">
+            <div data-stagger className="mb-8 justify-between">
               <Button asChild variant="outline" className="rounded-full border-slate-500 bg-white">
-                <Link href="/store">View Collection</Link>
+              <Link href="/store">View Collection</Link>
               </Button>
             </div>
+            </ul>
           </aside>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
