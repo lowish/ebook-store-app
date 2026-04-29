@@ -18,7 +18,7 @@ export const books: Book[] = [
     author: "James Clear",
     description:
       "Tiny changes that compound into remarkable results through clear systems and habits.",
-    price: 19,
+    price: 15.5,
     rating: null,
     cover: "/covers/AtomicHabits.jpg",
     featured: true,
@@ -31,7 +31,7 @@ export const books: Book[] = [
     author: "Robert Greene",
     description:
       "A sharp guide to strategy, influence, and understanding power dynamics.",
-    price: 24,
+    price: 10.99,
     rating: null,
     cover: "/covers/LawsofPower.jpg",
     featured: true,
@@ -43,7 +43,7 @@ export const books: Book[] = [
     author: "Ryan Holiday",
     description:
       "366 meditations on wisdom, perseverance, and the art of living.",
-    price: 17,
+    price: 16.5,
     rating: null,
     cover: "/covers/DailyStoic.jpg",
     featured: true,
@@ -56,7 +56,7 @@ export const books: Book[] = [
     author: "Mark Manson",
     description:
       "A counterintuitive approach to living a good life by focusing on what actually matters.",
-    price: 21,
+    price: 11.5,
     rating: null,
     cover: "/covers/NotGivingAFuck.jpg",
     featured: true,
@@ -68,7 +68,7 @@ export const books: Book[] = [
     author: "Naomi Alderman",
     description:
       "A bold story about how power changes society, identity, and control.",
-    price: 15,
+    price: 13.5,
     rating: null,
     cover: "/covers/the-power.jpg",
     featured: true,
