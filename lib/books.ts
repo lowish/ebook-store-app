@@ -7,6 +7,8 @@ export type Book = {
   rating?: number | null;
   cover: string;
   featured?: boolean;
+  filePath: string;
+  freeTrial?: boolean;
 };
 
 export const books: Book[] = [
@@ -20,6 +22,8 @@ export const books: Book[] = [
     rating: null,
     cover: "/covers/AtomicHabits.jpg",
     featured: true,
+    filePath: "atomic-habits.pdf",
+    freeTrial: true,
   },
   {
     id: "the-48-laws-of-power",
@@ -31,6 +35,7 @@ export const books: Book[] = [
     rating: null,
     cover: "/covers/LawsofPower.jpg",
     featured: true,
+    filePath: "48-laws-of-power.pdf",
   },
   {
     id: "the-daily-stoic",
@@ -42,6 +47,8 @@ export const books: Book[] = [
     rating: null,
     cover: "/covers/DailyStoic.jpg",
     featured: true,
+    filePath: "daily-stoic.pdf",
+    freeTrial: true,
   },
   {
     id: "the-subtle-art-of-not-giving-a-fuck",
@@ -53,6 +60,7 @@ export const books: Book[] = [
     rating: null,
     cover: "/covers/NotGivingAFuck.jpg",
     featured: true,
+    filePath: "subtle-art.pdf",
   },
   {
     id: "the-power",
@@ -64,6 +72,7 @@ export const books: Book[] = [
     rating: null,
     cover: "/covers/the-power.jpg",
     featured: true,
+    filePath: "the-power.pdf",
   },
 ];
 
