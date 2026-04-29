@@ -8,12 +8,8 @@ export function FinalCtaSection() {
     <section
       id="contact"
       data-section
-      className="relative overflow-hidden border-y-2 border-slate-900/20 px-4 py-18 sm:px-6 lg:px-8"
+      className="relative overflow-hidden border-slate-900/20 px-4 py-18 sm:px-6 lg:px-8"
     >
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-14 left-[12%] h-44 w-44 rounded-full bg-cyan-300/18 blur-3xl" />
-        <div className="absolute -bottom-20 right-[10%] h-56 w-56 rounded-full bg-amber-200/16 blur-3xl" />
-      </div>
 
       <div className="relative mx-auto w-full max-w-7xl">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.5fr] lg:items-end">
@@ -39,7 +35,7 @@ export function FinalCtaSection() {
   </h2>
 
   {/* IMAGE BOTTOM RIGHT */}
-  <div data-stagger className="mt-10 w-full max-w-sm">
+  <div id="final-cta-img" data-stagger className="mt-10 w-full max-w-sm">
     <div className="ml-auto relative overflow-hidden border border-[#c9c4b8] bg-[#f4f2ec] p-3">
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
