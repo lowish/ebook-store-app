@@ -36,7 +36,7 @@ export function LandingNavbar() {
 
         <div className="hidden md:block">
           <Button asChild className="rounded-full bg-slate-900 px-5 text-white hover:bg-slate-800">
-            <Link href="/store">Browse Store</Link>
+            <Link href="/store">Shop now</Link>
           </Button>
         </div>
 
