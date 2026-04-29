@@ -19,7 +19,7 @@ export const landingPreviewBooks: LandingPreviewBook[] = [
     title: "Atomic Habits",
     author: "James Clear",
     cover: "/covers/AtomicHabits.jpg",
-    category: "Self-help",
+    category: "Personal Growth",
     description: "A practical guide for building better habits with tiny daily changes.",
     price: 12.99,
   },
@@ -28,7 +28,7 @@ export const landingPreviewBooks: LandingPreviewBook[] = [
     title: "Deep Work",
     author: "Cal Newport",
     cover: "/covers/DeepWork.jpg",
-    category: "Business",
+    category: "Philosophy",
     description: "Learn focused work systems that help you produce high-value results.",
     price: 14.49,
   },
@@ -37,7 +37,7 @@ export const landingPreviewBooks: LandingPreviewBook[] = [
     title: "The Daily Stoic",
     author: "Ryan Holiday",
     cover: "/covers/DailyStoic.jpg",
-    category: "Education",
+    category: "Life Strategy",
     description: "365 concise insights to sharpen perspective, discipline, and calm.",
     price: 11.5,
   },
@@ -45,35 +45,35 @@ export const landingPreviewBooks: LandingPreviewBook[] = [
 
 export const landingCategories: LandingCategory[] = [
   {
-    name: "Fiction",
-    description: "Immersive stories that keep readers turning pages.",
+    name: "Self Improvement",
+    description: "Master habits, mindset, and skills for lasting personal growth.",
   },
   {
-    name: "Business",
-    description: "Actionable lessons for leadership and growth.",
+    name: "Philosophy",
+    description: "Explore timeless wisdom and modern thinking about life and purpose.",
   },
   {
-    name: "Self-help",
-    description: "Habits, mindset, and productivity for daily progress.",
+    name: "Personal Growth",
+    description: "Transform yourself through actionable strategies and insights.",
   },
   {
-    name: "Education",
-    description: "Learn modern skills through curated digital books.",
+    name: "Life Strategy",
+    description: "Design a focused approach to productivity, success, and fulfillment.",
   },
 ];
 
-export const howItWorks = [
+export const trustStats = [
   {
-    title: "Browse books",
-    description: "Scan featured picks and categories in seconds.",
+    label: "Readers",
+    value: "42,800+",
   },
   {
-    title: "Choose what interests you",
-    description: "Open details, compare options, and pick your next read.",
+    label: "Books",
+    value: "3,250+",
   },
   {
-    title: "Start reading instantly",
-    description: "Jump straight into a focused reading experience.",
+    label: "Average rating",
+    value: "4.8 / 5",
   },
 ];
 
@@ -93,8 +93,6 @@ export const landingFooterQuickLinks: LandingFooterLink[] = [
   { label: "Home", href: "#home" },
   { label: "Featured Books", href: "#featured" },
   { label: "Categories", href: "#categories" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Reader Trust", href: "#trust" },
   { label: "Explore Books", href: "/store" },
 ];
 
