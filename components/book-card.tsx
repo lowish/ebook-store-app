@@ -43,7 +43,7 @@ export function BookCard({ book }: BookCardProps) {
         <p className="font-medium">${book.price}</p>
         <Button asChild variant="ghost" size="sm" className="rounded-full">
           <Link href={`/books/${book.id}`}>
-            Details
+            Checkout
             <ArrowRight className="size-4" />
           </Link>
         </Button>
