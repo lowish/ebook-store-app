@@ -66,7 +66,7 @@ export function LandingNavbar() {
             ))}
             <Button asChild className="mt-2 bg-slate-900 text-white hover:bg-slate-800">
               <Link href="/store" onClick={() => setIsOpen(false)}>
-                Browse Store
+                Shop Now
               </Link>
             </Button>
           </nav>
