@@ -36,6 +36,7 @@ export const books: Book[] = [
     cover: "/covers/LawsofPower.jpg",
     featured: true,
     filePath: "48-laws-of-power.pdf",
+    freeTrial: true,
   },
   {
     id: "the-daily-stoic",
