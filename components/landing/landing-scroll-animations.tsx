@@ -131,6 +131,23 @@ export function LandingScrollAnimations() {
           },
         );
       }
+
+      gsap.fromTo(
+        "#final-cta-img",
+        {
+          y: 80,
+        },
+        {
+          y: -60,
+          ease: "none",
+          scrollTrigger: {
+            trigger: "#contact",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 0.8,
+          },
+        },
+      );
     });
 
     return () => ctx.revert();
