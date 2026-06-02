@@ -12,6 +12,8 @@ export default function SignInPage() {
         routing="path"
         path="/client/auth/sign-in"
         signUpUrl="/client/auth/sign-up"
+        forceRedirectUrl="/store"
+        fallbackRedirectUrl="/store"
         appearance={{
           layout: {
             socialButtonsPlacement: "top",
