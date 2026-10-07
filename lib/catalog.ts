@@ -56,11 +56,54 @@ let memoryCache: CacheEntry | null = null;
  */
 export function applyCuration(book: Book): Book {
   const curated = catalogCuration[book.id];
+  const genreCopy: Record<string, CuratedCopy> = {
+    Fiction: {
+      whatYouLearn: "Explore character, conflict, and the choices that shape a memorable story.",
+      whyItMatters: "Great fiction builds empathy and gives you a new way to understand people and society.",
+    },
+    "Self-Improvement": {
+      whatYouLearn: "Learn practical ideas for improving your habits, focus, resilience, and everyday decisions.",
+      whyItMatters: "Small, consistent changes can improve how you work, think, and live over time.",
+    },
+    Business: {
+      whatYouLearn: "Discover principles for leadership, strategy, innovation, and building useful organizations.",
+      whyItMatters: "These ideas help you make clearer decisions and create lasting value in changing markets.",
+    },
+    Technology: {
+      whatYouLearn: "Build foundational ways of thinking about software, systems, algorithms, and technical design.",
+      whyItMatters: "A strong technical foundation helps you solve problems clearly and create more reliable tools.",
+    },
+    Science: {
+      whatYouLearn: "Understand major scientific ideas and how evidence helps us explain the natural world.",
+      whyItMatters: "Scientific thinking strengthens curiosity, judgment, and our ability to respond to real-world challenges.",
+    },
+    History: {
+      whatYouLearn: "Examine the events, people, and systems that shaped societies across time.",
+      whyItMatters: "Knowing history gives context for current events and helps us recognize recurring patterns.",
+    },
+    Philosophy: {
+      whatYouLearn: "Question assumptions and consider different views of knowledge, ethics, meaning, and society.",
+      whyItMatters: "Philosophical reflection helps you reason carefully and make choices aligned with your values.",
+    },
+    Psychology: {
+      whatYouLearn: "Learn how perception, emotion, memory, and behavior influence the way people act.",
+      whyItMatters: "Understanding the mind can improve self-awareness, relationships, and decision-making.",
+    },
+    Education: {
+      whatYouLearn: "Explore methods for learning deeply, teaching effectively, and turning information into understanding.",
+      whyItMatters: "Better learning skills make every future subject and challenge more manageable.",
+    },
+    Romance: {
+      whatYouLearn: "Experience how trust, vulnerability, and connection shape relationships and personal growth.",
+      whyItMatters: "Stories about love invite reflection on communication, courage, and what people value most.",
+    },
+  };
+  const fallback = genreCopy[book.genre];
 
   return {
     ...book,
-    whatYouLearn: curated?.whatYouLearn?.trim() ?? "",
-    whyItMatters: curated?.whyItMatters?.trim() ?? "",
+    whatYouLearn: curated?.whatYouLearn?.trim() || fallback?.whatYouLearn || "",
+    whyItMatters: curated?.whyItMatters?.trim() || fallback?.whyItMatters || "",
   };
 }
 
